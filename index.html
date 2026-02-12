@@ -4,40 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Your Name | Portfolio</title>
+    <title>Developer Portfolio</title>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-slate-900 text-slate-100">
 
-    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-5xl font-bold mb-4">Hi, I'm [Your Name]</h1>
-        <p class="text-xl text-gray-400 mb-8">Java & Python Developer | Creating Safety Solutions for Tamil Nadu</p>
-        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold">View My Work</a>
-    </section>
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <h1 class="text-2xl font-bold text-amber-500 underline decoration-2">TEAM LION</h1>
+        <div class="space-x-6">
+            <a href="#projects" class="hover:text-amber-400">Projects</a>
+            <a href="resume.pdf" target="_blank" class="bg-amber-600 px-4 py-2 rounded-lg font-bold hover:bg-amber-500">Resume</a>
+        </div>
+    </nav>
 
-    <section id="projects" class="py-20 px-10">
-        <h2 class="text-3xl font-bold mb-12 text-center underline decoration-blue-500">Key Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            
-            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
-                <h3 class="text-2xl font-bold mb-2">Multi-User Chat Simulator</h3>
-                <p class="text-gray-400 mb-4">Built with Java and Firebase. Features real-time messaging using Firestore onSnapshot and Tailwind CSS for the UI.</p>
-                <div class="flex gap-2">
-                    <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Java</span>
-                    <span class="bg-orange-900 text-orange-200 text-xs px-2 py-1 rounded">Firebase</span>
+    <header class="py-20 text-center px-4">
+        <h2 class="text-5xl font-extrabold mb-4">Hi, I'm a Software Developer</h2>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+            Focusing on Java backend systems and Python automation. 
+            Passionate about building community-driven tech solutions in Tamil Nadu.
+        </p>
+    </header>
+
+    <section id="projects" class="max-w-6xl mx-auto py-12 px-6">
+        <h3 class="text-3xl font-bold mb-10 border-b-2 border-amber-600 inline-block">Featured Projects</h3>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-amber-500 transition shadow-xl">
+                <h4 class="text-2xl font-bold mb-3 text-amber-400">Multi-User Chat Simulator</h4>
+                <p class="text-slate-300 mb-4">
+                    Developed a Java-based messaging system integrated with **Firebase**. 
+                    Features real-time data syncing using Firestore's <code>onSnapshot</code> for seamless communication.
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <span class="bg-slate-700 px-3 py-1 rounded-full">Java</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full">Firebase</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full">Tailwind CSS</span>
                 </div>
             </div>
 
-            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
-                <h3 class="text-2xl font-bold mb-2">Team Lion: Safety Hub</h3>
-                <p class="text-gray-400 mb-4">A dual-purpose platform focused on female protection and animal welfare in Chennai.</p>
-                <div class="flex gap-2">
-                    <span class="bg-green-900 text-green-200 text-xs px-2 py-1 rounded">HTML/CSS</span>
-                    <span class="bg-purple-900 text-purple-200 text-xs px-2 py-1 rounded">Social Impact</span>
+            <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-amber-500 transition shadow-xl">
+                <h4 class="text-2xl font-bold mb-3 text-amber-400">Team Lion: Safety Platform</h4>
+                <p class="text-slate-300 mb-4">
+                    A web platform designed to protect humans and animals in Chennai. 
+                    Includes a specialized "Fierce Protector" UI and localized safety resources.
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <span class="bg-slate-700 px-3 py-1 rounded-full">HTML5</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full">Community Safety</span>
+                    <span class="bg-slate-700 px-3 py-1 rounded-full">Project Mgmt</span>
                 </div>
             </div>
-
         </div>
     </section>
+
+    <footer class="py-20 text-center">
+        <p class="text-slate-500">Let's build something impactful together.</p>
+        <div class="mt-4 space-x-4">
+            <a href="#" class="text-amber-500 hover:underline">GitHub</a>
+            <a href="#" class="text-amber-500 hover:underline">LinkedIn</a>
+        </div>
+    </footer>
 
 </body>
 </html>
